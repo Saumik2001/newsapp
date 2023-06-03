@@ -1,17 +1,16 @@
-
-import './App.css';
-import Navbar from './Components/Navbar';
-import News from './Components/News';
-
-
 import React, { Component } from 'react'
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-} from "react-router-dom";
+import Newsitem from './Newsitem'
+import PropTypes from 'prop-types'
+export class News extends Component {
+  static defaultProps={
+      country:'in',
+      category:'general'
+  }
+  static propTypes={
+    country:PropTypes.string,
+    category:PropTypes.string
 
-export default class App extends Component {
+  }
   articles = [
     {
       "source": {
@@ -37,7 +36,7 @@ export default class App extends Component {
       "url": "http://www.bbc.co.uk/news/world-us-canada-64257109",
       "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/A1D4/production/_128282414_garland.jpg",
       "publishedAt": "2023-01-13T13:07:21.8828702Z",
-      "content": "Media caption, Watch: Biden says documents weren't sitting out on the street\r\nAt times, Joe Biden is his own worst enemy.\r\nWhen asked on Thursday whether it was true he had kept classified documents … [+2283 chars]"
+      "content": "Media caption, Watch: Biden says documents weren't sitting out on the street\r\nAt times, Joe Biden is his own worst enemy.\r\nWhen asked on Thursday whether it was true he had kept classNameified documents … [+2283 chars]"
     },
     {
       "source": {
@@ -144,26 +143,61 @@ export default class App extends Component {
       "content": "An indigenous nation in Canada said it has discovered evidence of possible unmarked graves on the grounds of a former residential school.\r\nStar Blanket Cree Nation said a ground-penetrating radar had… [+3113 chars]"
     }
   ]
-  
-
+  constructor() {
+    super();
+    console.log("i am a constructor from news");
+    this.state = {
+      articles: this.articles, //setting state of articless here
+      page:1
+    }
+  }
+  async componentDidMount() {
+    let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=5963776c47cb4035b6f3f3ed40c293d0&pageSize=20`
+    let data = await fetch(url); //fetch and return promise  
+    let parsedData = await data.json(); // fetch and return json object of the promise 
+    this.setState({ articles: parsedData.articles ,totalResults:parsedData.articles.totalResults }) //replacing articles with the articles of url
+  }
+  handleprev=async()=>{
+    let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=5963776c47cb4035b6f3f3ed40c293d0&page=${this.state.page-1}&pageSize=20`
+    let data = await fetch(url); //fetch and return promise  
+    let parsedData = await data.json(); // fetch and return json object of the promise 
+      this.setState({page:this.state.page-1
+      ,articles: parsedData.articles }) // increase page++
+  }
+  handleNext=async () =>{
+    if(this.state.page+1>Math.ceil(this.state.totalResults/20)){
+        // if the next page is greater than the total results/page size do nothing and stop
+    }
+    else{
+    let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=5963776c47cb4035b6f3f3ed40c293d0&page=${this.state.page+1}&pageSize=20`
+    let data = await fetch(url); //fetch and return promise  
+    let parsedData = await data.json(); // fetch and return json object of the promise 
+      this.setState({page:this.state.page+1
+      ,articles: parsedData.articles }) // increase page++
+    }
+  }
   render() {
     return (
-      <div>
-        <Router>
-        <Navbar />
-        <Routes>
 
-            <Route exact path="/" element={<News key ="general" category='general' country='in'/>} />
-            <Route exact path ="/science" element={<News key ="science"category='science' country='in'/>} />
-            <Route exact path ="/entertainment" element={<News key ="entr"category='entertainment' country='in'/>} />
-            <Route exact path ="/sports" element={<News key ="sports" category='sports' country='in'/>} />
-            <Route exact path ="/business" element={<News key ="business"category='business' country='in'/>} />
-          </Routes>
-        {/* <News category='sports' country='in'/> */}
-        </Router>
+      <div className='container my-3'>
+        <h2 className='text-center' style={{margin:'33px, 0px'}}>Z-News Top-Headlines</h2>
+        <div className="row">
+          {this.state.articles.map((element) => {
+            return <div className="col-md-3" key={element.url}>
+              < Newsitem title={element.title ? element.title.slice(0, 45) : ""} description={element.description ? element.description.slice(0, 60) : ""} imgUrl={element.urlToImage ? element.urlToImage : "https://images.unsplash.com/photo-1503694978374-8a2fa686963a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80"} newsUrl={element.url} date={element.publishedAt}/>
+            </div>
+          })}
+          <div className="d-flex justify-content-between">
+          <button disabled={this.state.page<=1} type="button" className="btn btn-info" onClick={this.handleprev}>Previous</button>
+          <button type="button" className="btn btn-info" onClick={this.handleNext}>Next</button>
+          </div>
+
+
+        </div>
       </div>
+
     )
   }
 }
 
-
+export default News

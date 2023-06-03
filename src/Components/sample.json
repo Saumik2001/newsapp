@@ -1,0 +1,136 @@
+{
+    "status": "ok",
+    "totalResults": 10,
+    "articles": [
+    {
+    "source": {
+    "id": "bbc-news",
+    "name": "BBC News"
+    },
+    "author": "BBC News",
+    "title": "California’s homeless battle floods and storms",
+    "description": "Few are feeling the rage of California's storms as much as the state's 170,000 homeless people.",
+    "url": "http://www.bbc.co.uk/news/world-us-canada-64257449",
+    "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/14102/production/_128287128_tents2_getty.png",
+    "publishedAt": "2023-01-13T13:22:18.6019408Z",
+    "content": "Media caption, Watch: Unhoused in San Francisco struggle through storms\r\nFew are feeling the rage of California's unrelenting storms as much as the state's 170,000 homeless people.\r\nUp and down the c… [+4795 chars]"
+    },
+    {
+    "source": {
+    "id": "bbc-news",
+    "name": "BBC News"
+    },
+    "author": "BBC News",
+    "title": "Two-month gap in telling public may haunt Biden",
+    "description": "The distinctions between the inquiry into Mr Biden and a parallel one into Donald Trump may pass most Americans by.",
+    "url": "http://www.bbc.co.uk/news/world-us-canada-64257109",
+    "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/A1D4/production/_128282414_garland.jpg",
+    "publishedAt": "2023-01-13T13:07:21.8828702Z",
+    "content": "Media caption, Watch: Biden says documents weren't sitting out on the street\r\nAt times, Joe Biden is his own worst enemy.\r\nWhen asked on Thursday whether it was true he had kept classified documents … [+2283 chars]"
+    },
+    {
+    "source": {
+    "id": "bbc-news",
+    "name": "BBC News"
+    },
+    "author": "BBC News",
+    "title": "Benjamin Mendy found not guilty of six counts of rape",
+    "description": "The Manchester City footballer was accused of luring women to his home and sexually assaulting them.",
+    "url": "http://www.bbc.co.uk/news/uk-england-manchester-63677581",
+    "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/0E83/production/_115651730_breaking-promo-976.png",
+    "publishedAt": "2023-01-13T12:52:18.5085029Z",
+    "content": "Manchester City footballer Benjamin Mendy has been found not guilty of six counts of rape and one count of sexual assault at Chester Crown Court.\r\nJurors could not reach verdicts on one count of rape… [+1003 chars]"
+    },
+    {
+    "source": {
+    "id": "bbc-news",
+    "name": "BBC News"
+    },
+    "author": "BBC News",
+    "title": "Adidas loses stripes row trademark battle with luxury designer Thom Browne",
+    "description": "The sportswear giant argued the use of four parallel stripes was too similar to its logo.",
+    "url": "http://www.bbc.co.uk/news/world-us-canada-64261616",
+    "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/80BE/production/_128285923_socks-getty-reuters-v2.jpg",
+    "publishedAt": "2023-01-13T12:07:16.9603575Z",
+    "content": "Adidas has lost a court case to try to stop a fashion designer from using a four-stripe design.\r\nThe sportswear giant argued that luxury brand Thom Browne Inc's four stripes were too similar to its t… [+2388 chars]"
+    },
+    {
+    "source": {
+    "id": "bbc-news",
+    "name": "BBC News"
+    },
+    "author": "BBC News",
+    "title": "Russia claims control of salt mine town Soledar",
+    "description": "Russia says it has taken control of Ukrainian salt mine town Soledar after a months-long battle, calling it a \"crucial step\"",
+    "url": "http://www.bbc.co.uk/news/world-europe-64263119",
+    "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/83B3/production/_115651733_breaking-large-promo-nc.png",
+    "publishedAt": "2023-01-13T10:52:23.8846159Z",
+    "content": "Russia says it has taken control of Ukrainian salt mine town Soledar after a months-long battle, calling it a \"crucial step\""
+    },
+    {
+    "source": {
+    "id": "bbc-news",
+    "name": "BBC News"
+    },
+    "author": "BBC News",
+    "title": "At least six people dead from tornadoes in Alabama",
+    "description": "Communities, including the city of Selma, were struck by dozens of tornadoes on Thursday, officials say.",
+    "url": "http://www.bbc.co.uk/news/world-us-canada-64258552",
+    "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/19E4/production/_128282660_51b2f9353b6dfa6998967939f0a97a1a657081ed0_0_5676_37841000x667.jpg",
+    "publishedAt": "2023-01-13T03:07:22.243459Z",
+    "content": "At least six people have been killed by tornadoes in Alabama, according to local officials, who say they are \"still searching for bodies\".\r\nOver 35 tornadoes were reported by the National Weather Ser… [+1995 chars]"
+    },
+    {
+    "source": {
+    "id": "bbc-news",
+    "name": "BBC News"
+    },
+    "author": "BBC News",
+    "title": "Keenan Anderson: Black Lives Matter founder's cousin dies after police arrest",
+    "description": "Keenan Anderson was repeatedly Tasered by LA police following a traffic accident.",
+    "url": "http://www.bbc.co.uk/news/world-us-canada-64252337",
+    "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/13A2C/production/_128282408_screenshot2023-01-12at2.26.56pm.png",
+    "publishedAt": "2023-01-13T01:22:26.8217126Z",
+    "content": "A cousin of Black Lives Matter co-founder Patrisse Cullors died hours after he was repeatedly Tasered and restrained in the street by Los Angeles police. \r\nKeenan Anderson, 31, a teacher and father, … [+3328 chars]"
+    },
+    {
+    "source": {
+    "id": "bbc-news",
+    "name": "BBC News"
+    },
+    "author": "BBC News",
+    "title": "Young Thug trial: Essay-writing punishment for woman who skipped jury duty",
+    "description": "A potential juror in the high-profile case of rapper Young Thug was reprimanded with a writing assignment.",
+    "url": "http://www.bbc.co.uk/news/world-us-canada-64257108",
+    "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/F04E/production/_128281516_screenshot-75.png",
+    "publishedAt": "2023-01-13T01:22:22.3696961Z",
+    "content": "A woman in Georgia who skipped jury duty was ordered by the judge to write a 30-page essay on the importance of jury service.\r\nIdentified only as Juror #64, she had been on a trip to the Dominican Re… [+2695 chars]"
+    },
+    {
+    "source": {
+    "id": "bbc-news",
+    "name": "BBC News"
+    },
+    "author": "BBC News",
+    "title": "Lisa Marie Presley hospitalised after heart attack, US media says",
+    "description": "The singer, who is rock legend Elvis's only child, was reportedly found unresponsive at her LA home.",
+    "url": "http://www.bbc.co.uk/news/entertainment-arts-64255117",
+    "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/7BD1/production/_128279613_gettyimages-1404256936.jpg",
+    "publishedAt": "2023-01-12T23:07:23.2432693Z",
+    "content": "Lisa Marie Presley, the only child of Rock legend Elvis, has been rushed to hospital after suffering a suspected cardiac arrest, US media has reported.\r\nThe singer, 54, was found unresponsive at her … [+1613 chars]"
+    },
+    {
+    "source": {
+    "id": "bbc-news",
+    "name": "BBC News"
+    },
+    "author": "BBC News",
+    "title": "Jawbone found in possible unmarked residential school grave",
+    "description": "The fragment was found during a radar search for unmarked graves at the site of a former residential school.",
+    "url": "http://www.bbc.co.uk/news/world-us-canada-64225855",
+    "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/8032/production/_128281823_gettyimages-1237258483.jpg",
+    "publishedAt": "2023-01-12T22:37:21.3068361Z",
+    "content": "An indigenous nation in Canada said it has discovered evidence of possible unmarked graves on the grounds of a former residential school.\r\nStar Blanket Cree Nation said a ground-penetrating radar had… [+3113 chars]"
+    }
+    ]
+    }
